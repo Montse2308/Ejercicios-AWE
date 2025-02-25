@@ -1,0 +1,21 @@
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+  
+  li:hover {
+    background-color: #eee;
+  }
+  
+  .on-sale {
+    font-weight: bold;
+    color: green;
+  }
+  

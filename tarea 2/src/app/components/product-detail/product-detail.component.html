@@ -1,0 +1,14 @@
+
+<h3>Detalles del Producto</h3>
+
+<p><strong>ID:</strong> {{ product.id }}</p>
+<p><strong>Nombre:</strong> {{ product.name }}</p>
+<p><strong>Precio:</strong> ${{ product.price }}</p>
+
+<p><strong>Stock:</strong>
+  <span [ngClass]="{'en-stock': product.inStock, 'agotado': !product.inStock}">
+    {{ product.inStock ? 'Disponible' : 'Agotado' }}
+  </span>
+</p>
+
+<p><strong>Oferta:</strong> {{ product.onSale ? 'Sí' : 'No' }}</p>
